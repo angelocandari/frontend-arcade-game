@@ -25,9 +25,10 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
-    canvas.width = 505;
+    canvas.width = 707;
     canvas.height = 606;
     doc.body.appendChild(canvas);
+
 
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
@@ -94,6 +95,10 @@ var Engine = (function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
+
+        allStars.forEach(function(star) {
+            star.update(dt);
+        });
         player.update();
     }
 
@@ -116,7 +121,7 @@ var Engine = (function(global) {
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
             numRows = 6,
-            numCols = 5,
+            numCols = 7,
             row, col;
 
         /* Loop through the number of rows and columns we've defined above
@@ -151,7 +156,12 @@ var Engine = (function(global) {
             enemy.render();
         });
 
+        allStars.forEach(function(star) {
+            star.render();
+        });
+
         player.render();
+        score.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -164,13 +174,14 @@ var Engine = (function(global) {
 
     /* Go ahead and load all of the images we know we're going to need to
      * draw our game level. Then set init as the callback method, so that when
-     * all of these images are properly loaded our game will start.
+     * all of these images are properly loaded our game will s  tart.
      */
     Resources.load([
         'images/stone-block.png',
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
+        'images/Star.png',
         'images/char-boy.png'
     ]);
     Resources.onReady(init);

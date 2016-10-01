@@ -1,6 +1,23 @@
-frontend-nanodegree-arcade-game
+My First Arcade Game
 ===============================
+#Introduction
+This is one of the projects that I have completed as part of my **Front-End Nano Degree Course** at [Udacity](www.udacity.com).
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+_Freddy_, the frog, needs to cross the street to get to the pond where he lives. He needs to avoid being crushed by the bugs. As an extra point, he can get stars along the way to get more scores.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+##Game Mechanics
+- Use the _Up, Left, Down, Right_ arrow to move _Freddy_.
+- _Freddy_ gets 100 points each time he reaches the pond.
+- _Stars_ will get him an extra 40 points everytime he collects one.
+- Getting hit by a _bug_ will cost him 20 points and returns him to his original position.
+- If _Freddy_ get's reaches the pond, the game resets and _Freddy_ returns to his original position to do it all over again.
+
+## Code Structure
+- Sprite is the Class common to all objects on the canvas.
+- Enemy is the Class for the bugs.
+- Player is the Class for the _Freddy_.
+- Star is the Class for the Power Ups.
+- There is a Score Class that holds the score of the player.
+- Make sure to download all files to run the game without a hitch.
+
+Have Fun!
