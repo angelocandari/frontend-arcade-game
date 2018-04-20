@@ -1,11 +1,12 @@
-My First Arcade Game
+# My First Arcade Game
 ===============================
-#Introduction
-This is one of the projects that I have completed as part of my **Front-End Nano Degree Course** at [Udacity](www.udacity.com).
+## Getting Started
+You can view the game here: https://angelocandari.github.io/fed-arcade-game/
 
-_Freddy_, the frog, needs to cross the street to get to the pond where he lives. He needs to avoid being crushed by the bugs. As an extra point, he can get stars along the way to get more scores.
+## Introduction
+This is a game made from javascript. _Freddy_, the frog, needs to cross the street to get to the pond where he lives. He needs to avoid being crushed by the bugs. As an extra point, he can get stars along the way to get more scores.
 
-##Game Mechanics
+## Game Mechanics
 - Use the _Up, Left, Down, Right_ arrow to move _Freddy_.
 - _Freddy_ gets 100 points each time he reaches the pond.
 - _Stars_ will get him an extra 40 points everytime he collects one.
