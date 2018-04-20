@@ -1,5 +1,4 @@
 # My First Arcade Game
-===============================
 ## Getting Started
 You can view the game here: https://angelocandari.github.io/fed-arcade-game/
 
